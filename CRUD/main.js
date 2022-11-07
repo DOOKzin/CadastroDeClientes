@@ -128,7 +128,7 @@ const editDelete = (evento) => {
 
         const [action, index] = evento.target.id.split('-')
 
-        if (action == 'edit') {
+        if (action == 'editar') {
             editCliente(index)
         } else {
             const client = readClient()[index]
@@ -158,3 +158,6 @@ document.getElementById('salvar')
 
 document.querySelector('#tableClient>tbody')
     .addEventListener('click', editDelete)
+
+document.getElementById('cancelar')
+    .addEventListener('click', closeModal)
