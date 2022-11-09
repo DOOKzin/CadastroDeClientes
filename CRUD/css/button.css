@@ -24,6 +24,9 @@ button.red{
 .button:hover{
     box-shadow: inset 200px 0 0 #ffffff55;
 }
+button svg{
+    pointer-events: none;
+}
 
 @media(max-width:480px){
     .button.mobile{
